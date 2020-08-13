@@ -641,7 +641,8 @@ final public class AnimationView: LottieView {
   
   override public var intrinsicContentSize: CGSize {
     if let animation = animation {
-      return animation.bounds.size
+      return self.frame.size
+   //   return animation.bounds.size
     }
     return .zero
   }
